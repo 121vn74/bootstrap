@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+    <style>
+        .div1 {
+          height:fit-content;
+          width: fit-content;
+          border: 3px outset rgb(45, 41, 46);
+          background-color:darkgray;
+          background-size:cover;
+          text-align: left;
+          margin: auto;
+          padding: 10px;
+          font-family:Avanta Garde;
+        }
+        body{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy8alVHWT7q_hVpC66FZ7JJYih-qDrvZ3NTg&usqp=CAU');
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 100%;
+        width: 100%;
+        }
+        </style>
+        </head>
+        <body>
+            
+               <script>               
+                function Validate()
+        {
+          var fname=document.f1.fname.value;
+          var lname=document.f1.lname.value;
+          var gm=document.f1.male.value;
+          var gf=document.f1.female.value;
+           var ph=document.f1.pn.value;
+           var gm=document.f1.male.value;
+           var d=document.f1.dec.value;
+           var e=document.f1.email.value      
+        var errors = [];
+               
+               if(lname=="") 
+                    errors[errors.length]= "Fill the Last Name ";
+               if(fname=="")
+                    errors[errors.length]= "Fill the First Name";
+               if(fname!=""&&lname!=""){
+                  if(fname==lname)
+                    errors[errors.length]= "First-Name and Last-Name must be different"; 
+               if(ph.length<10||ph.length>10)
+                    errors[errors.length]= "Phone number length should be 10";
+                    if(document.f1.dec.checked==0)
+                errors[errors.length]= "please agree the terms and condition";
+                var pat=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                if(email.value.match(pat))
+                    true
+                else
+                    errors[errors.length]= "Fill correct Email";            
+        }
+        if (errors.length > 0) 
+              reportErrors(errors);
+              
+        else{
+               alert("Form submitted successfully")
+        }          
+        function reportErrors(errors){
+         for (var i = 0; i<errors.length; i++) {
+          var numError = i + 1;
+          msg = errors[i];
+         }
+         alert(msg); 
+         
+        }}     
+        </script>
+        <form name="f1" onsubmit="Validate()">
+        <div class="div1">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" placeholder="Enter first name"name="fname"pattern=[a-zA-Z]{3,} AUTOFOCUS ><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" placeholder="Enter last name"name="lname"pattern=[a-zA-Z]{2,} AUTOFOCUS ><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" value="male"name="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" value="female"name="male">
+        <label for="female">Female</label><br><br>
+        <label for="session">Session:</label>
+        <input type="radio" id="FN" value="FN"name="FN">
+        <label for="daycamp">FN</label>
+        <input type="radio" id="AN" value="AN"name="AN">
+        <label for="nightcamp">AN</label><br><br>
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age"><br>
+        <br>
+       <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Parent/guardian name"name="fnam" pattern=[a-zA-Z]{3,} AUTOFOCUS><br><br>
+        <label for ="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter email id"name="email"><br><br>
+        <label for="phone number">Phone number:</label>
+        <input type="text"value="+91"size="1"disabled>
+        <input type="tel" placeholder="01234-56789" name="pn"><br><br>
+        <label for="address">Address :</label><br>
+        &emsp;&emsp;&emsp;&emsp;<textarea name="message" rows="5" cols="30" placeholder="Enter your address"></textarea><br><br>
+        <label for="pin">Pin Code :</label>
+        <input type="text" id="pin" name="pin" placeholder="Enter your pin code" ><br>
+       <br>
+        <input type="checkbox" name="dec">Agree terms and condition</input><br><br>
+        <input type="submit" name="submit" value="Submit"style="width:25%;height:25%;font-family:inkfree;font-size:20px"></div>
+        <br>
+        <br>
+        </form>
+</body>
+</html>

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{ 
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background-color: black;
+}
+#logo img{
+    border-radius: 10px;
+    width: 160px;
+    margin-left: 40px;
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: green !important; 
+
+}
+#navbarSupportedContent a{
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid green ;
+}
+#navbarSupportedContent button{
+    background: #393185;
+    width: 5rem;
+    border-radius: 15px  ;
+    color: #FFED00;
+} 
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+/****Home*****/
+#home{
+    background:  linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.2)),url(bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction:column;
+}
+#home h1{
+    font-size: 75px;
+    color: black;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 0px 0px #ccc;
+} 
+#home p{
+    font-size: 18px ;
+    color: black ;
+}
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+.singin  {
+    background: #393185 !important;
+    color: #FFED00;
+}
+#home button{
+    color: #FFED00;
+}
+
+/***mobiles****/
+
+#mobiles{
+    background: #e5e5e5;
+}
+#mobiles h1{
+    fwidthont-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#mobiles img{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+#mobiles a{
+    color: #FFED00;
+}
+.card{
+    width: 250px;
+    height: 280x;
+    background: #e5e5e5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    border-radius: 15px !important;   
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+    transition: .2s;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                inset -4px -4px 10px white;
+                transition: .2s;
+}
+
+/****accessories****/
+#accessories{
+    background:white;
+}
+#accessories h1{
+    fwidthont-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#accessories h2{
+    fwidthont-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+#accessories img{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+#accessories a{
+    color: #FFED00;
+}
+.card{
+    width: 250px;
+    height: 350px;
+    background: #e5e5e5 !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    border-radius: 15px !important;   
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+    transition: .2s;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                inset -4px -4px 10px white;
+                transition: .2s;
+}
+
+/****contact****/
+#contact{
+    background: #e5e5e5;
+}
+#contact img{
+    height: 100%;
+}
+.box{
+    width: 80% !important;
+    
+    margin-top: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+#contact button{
+    color: #FFED00;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    background: black;
+    margin: ;
+    text-align: center;
+    color: white;
+    padding: 3px  ;
+}
